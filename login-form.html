@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Login Template</title>
+    <link rel="shortcut icon" href="https://cdn.sstatic.net/Sites/stackoverflow/img/favicon.ico?v=4f32ecc8f43d">
+    <link rel="stylesheet" type="text/css" href="login.css">
+</head>
+<body>
+<div class="wrapper">
+    <div class="image">
+        <img src="bootstrap-solid.svg" alt="bootstrap" width="70px">
+    </div>
+    <div class="details">
+        <p>Please sign in</p>
+        <form action = "login.php" method="post">
+            <input class="username" type="username" name="usrname" placeholder="Username" required>
+            <br>
+            <input class="password" type="password" name="pwd" placeholder="Password" required>
+            <br>
+            <input type="checkbox" name="remember"><label>Remember me</label>
+            <br>
+            <input class="submit" type="submit" value="sign in">
+        </form>
+    </div>
+    <footer class="footer"> &copy; 2018-2019</footer>
+</div>
+</body>
+</html>
