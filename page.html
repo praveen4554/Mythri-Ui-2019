@@ -1,48 +1,54 @@
 <DOCTYPE html>
-<head>
-<h1> WEBPAGE </h1>
-<style>
-
-</style>
-</head>
-<body>
-<p> This page enabes you to fill your information</p>
-<form action = "www.google.com" method="GET" >
-    <fieldset>
-        <legend class =1 > Personal information</legend>
-        First Name:
-        <input type="text" name = "First Name" placeholder=" firstname">
-        <br>
-        <br>
-        Last Name:
-        <input type="text" name = "Last Name" placeholder=" last name">
-        <br>
-        <br>
-        Email Address:
-        <input type="text" name = "Email address" placeholder=" @email.com">
-        <br>
-        <br>
-        Select your gender<br>
-        <input type="radio" name="gender" value="Male"> Male <br>
-        <input type="radio" name="gender" value="Female" checked> Female <br>
-        <input type="radio" name="gender" value="other"> Other <br>
-        <br>
+        <head>
+        <h1> Signup page </h1>
+        <style>
         
-        Marital status<br>
-        <select name="Marital status" size="2" multiple>
-            <option value="Married"> Married</option>
-            <option value="Married"> Single</option>
-            <option value="Married"> Divorced</option>
-            <option value="Married"> Widowed</option>
-        </select>
-        <br>
+        </style>
+        </head>
+        <body>
+        <p> Fill your information</p>
+        <form action = "www.google.com" method="GET" >
+            <fieldset>
+                <legend class =1 > Personal information</legend>
+                First Name:
+                <input type="text" name = "First Name" placeholder=" firstname">
+                <br>
+                <br>
+                Last Name:
+                <input type="text" name = "Last Name" placeholder=" last name">
+                <br>
+                <br>
+                Email Address:
+                <input type="text" name = "Email address" placeholder=" @email.com">
+                <br>
+                <br>
+                Address
+                <textarea name="text" rows="5" cols="5"></textarea>
+                <br>
+                <br>
+                Select your gender<br>
+                <input type="radio" name="gender" value="Male"> Male <br>
+                <input type="radio" name="gender" value="Female" checked> Female <br>
+                <input type="radio" name="gender" value="other"> Other <br>
+                <br>
+                Date of birth <input type="date" name="birthday">
+                <br>
+                <br>
+                Marital status
+                <select name="Marital status">
+                    <option value="Married"> Married</option>
+                    <option value="Married"> Single</option>
+                    <option value="Married"> Divorced</option>
+                    <option value="Married"> Widowed</option>
+                </select>
+                <br>
+            </fieldset>
+            <br>
+            <br>
+            <label> Additional information or attachments</label>
+            Select file <input type="file" name="myfile"><br><br>
+            Salary range <input type="range" name="salary" min="0" max="100000"><br><br>
         
-        Addtional information
-        <textarea name="text" rows="5" cols="5"></textarea>
-        <br>
-        <br>
-    </fieldset>
-    Select file <input type="file" name="myfile"><br><br>
-    <button type="button" onclick="alert('Form Submitted!')">Submit</button>
-</form>
-</body>
+            <button type="button" onclick="alert('Form Submitted!')">Submit</button>
+        </form>
+        </body>
