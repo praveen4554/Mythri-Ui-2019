@@ -15,7 +15,7 @@ html
     font-family: Montserrat,-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,"Noto Sans",sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol","Noto Color Emoji";
     display: block;
     font-weight: bold;
-    top:10px;
+    top:0px;
     position:sticky;
 
 }
@@ -74,7 +74,7 @@ html
 }
 #pic01{
     margin-left: 35em;
-    margin-top: 5em;
+    margin-top: 2em;
 
 }
 #t2{
@@ -93,4 +93,90 @@ html
     text-align: center;
     font-size: 25px;
 
+}
+#t4{
+    font-family: Montserrat,-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,"Noto Sans",sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol","Noto Color Emoji";
+    color: #343a40;
+    text-align: center;
+    font-size: 50px;  
+    text-transform: uppercase;
+}
+
+.grid{
+    display: flex;
+    flex-wrap: wrap;
+    background-color: white;
+    text-align: center;
+    margin: auto;
+    justify-content: center;
+    margin-top: 4em;
+
+}
+
+.grid img{
+    padding: 10px;
+}
+
+ .grid img:hover{
+
+    color: #1abc9c;
+ }
+
+ .about{
+     background-color: #1abc9c;
+     padding-bottom: 5em;
+ }
+
+ #t5{
+    font-family: Montserrat,-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,"Noto Sans",sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol","Noto Color Emoji";
+    color: white;
+    text-align: center;
+    font-size: 50px;  
+    text-transform: uppercase;
+    padding-top: 1em;
+ }
+.common-part{
+    font-family: Montserrat,-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,"Noto Sans",sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol","Noto Color Emoji";
+     display:inline-block;
+     width:18%;
+     color: white;
+     font-size: 20px; 
+     
+ }
+ .para{
+     text-align: center;
+ }
+
+ .part1{
+   
+    text-align: justify;
+    margin-top: 27px;
+    margin-right: 32px;
+ }
+
+ .part2{
+     margin-left: 10px;
+     margin-top: -1em;
+     text-align: justify;
+     display: inline-block;
+    
+ }
+ .FD{
+   
+    background-color: #1abc9c;
+    color: white;
+    margin-left: 44em;
+    margin-top: 1em;
+    padding: 25px;
+    border-color: white;
+    font-family: Montserrat,-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,"Noto Sans",sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol","Noto Color Emoji";
+    font-size: 15px;
+ }
+.fafadownload{
+    margin-left: 9px;
+}
+
+.FD:hover{
+    background-color: white;
+    color: black;
 }
