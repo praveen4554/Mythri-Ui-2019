@@ -40,6 +40,11 @@ html
     background-color: #c10a28;
 }
 
+.nvlst:hover{
+    background-color: red;
+    
+}
+
 .sublist{
     background-color: #c10a28;
     border: none;
