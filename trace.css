@@ -1,0 +1,150 @@
+.html{
+    height: 100%;
+    width: 98%;
+}
+
+#logo{
+    height: 134px;
+    width: 134px;
+    margin-top: -2em;
+}
+
+.navbar{
+    padding-right: 63px;
+    padding-left: 50px;
+    padding-top: 1em;
+    padding-bottom: 0em;
+    background-color: burlywood;
+    font-family: Montserrat,-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,"Noto Sans",sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol","Noto Color Emoji";
+    display: inline-flex;
+    font-weight: bold;
+    top:0px;
+    position:sticky;
+
+}
+.id1{
+    display: inline-flex;
+
+}
+
+.navicons{
+    display: inline-block;
+    margin-left: 16em;
+    padding: 31px;
+    padding-right: 14em;
+    font-size: 16px;
+    word-spacing: 62px;
+    color: black;
+    
+}
+.navicons a:link{
+    text-decoration: none;
+}
+
+.navicons a:hover{
+    color: 5px red;
+
+}
+.Intro{
+    background-color: azure;
+    padding-top: 1em;
+    text-align: center;
+    font-family: Montserrat,-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,"Noto Sans",sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol","Noto Color Emoji";
+}
+#Matr1{
+    padding: 36px;
+    margin-right: 15em;
+    margin-left: 15em;
+}
+#Ipc{
+    width: 100%;
+}
+
+.scndIntro{
+    background-color: rgb(59, 138, 59);
+    padding-top: 1em;
+    text-align: center;
+    font-family: Montserrat,-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,"Noto Sans",sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol","Noto Color Emoji";
+}
+
+#matr2{
+    padding: 9px;
+    margin-right: 15em;
+    margin-left: 15em; 
+}
+
+#pic2{
+  width: 75%;
+}
+.services{
+    padding-top: 1em;
+    text-align: center;
+    font-family: Montserrat,-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,"Noto Sans",sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol","Noto Color Emoji";
+}  
+
+#pic{
+    width: 100%;
+}
+
+.contct{
+    background-color: cadetblue;
+    padding-top: 1em;
+    text-align: center;
+    padding-bottom: 2em;
+}
+
+#sameline{
+    padding: 7px;
+    padding-right: 234px;
+    margin-right: 2em;
+    margin-left: 0em;
+}
+
+#subject{
+    margin-right: 4em;
+    margin-left: 2em;
+    padding: 7px;
+    padding-right: 32em;
+    margin-top: 15px;
+}
+
+#Msg{
+    margin-right: 37em;
+    margin-left: 33em;
+    padding: 7px;
+    padding-right: 32em;
+    margin-top: 15px;
+}
+
+#submt{
+    margin-top: 15px;
+    padding: 15px;
+    padding-right: 2em;
+    padding-left: 2em;
+    background-color: darkseagreen;
+    font-size: 16px;
+    font-weight: bold;
+}
+
+#footer{
+    text-align: center;
+    margin-top: -2em;
+}
+
+.media ul{
+    list-style-type: none;
+    display: flex;
+}
+
+.media{
+    text-align: center;
+    margin-left: 17em;
+    font-size: 34px;
+}
+
+.media li{
+    
+    border: black;
+    border-radius: 50%;
+    padding: 20px;
+}
