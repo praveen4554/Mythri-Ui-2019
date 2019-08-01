@@ -1,6 +1,10 @@
 .html{
     height: 100%;
-    width: 98%;
+    width: 100%;
+    overscroll-behavior: hidden;
+}
+.wrapper{
+    width: 100%;
 }
 
 #logo{
@@ -37,12 +41,16 @@
     color: black;
     
 }
+
+.navicons a{
+    color: black;
+}
 .navicons a:link{
     text-decoration: none;
 }
 
 .navicons a:hover{
-    color: 5px red;
+    color: red;
 
 }
 .Intro{
@@ -147,4 +155,10 @@
     border: black;
     border-radius: 50%;
     padding: 20px;
+}
+
+.media li:hover{
+    border: black;
+    border-radius: 25 px black;
+    color: rgb(84, 84, 218);
 }
