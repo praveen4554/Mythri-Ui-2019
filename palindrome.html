@@ -1,0 +1,30 @@
+<html>
+<head><title> palindrome </title></head>
+
+<body>
+
+<p> Palindrome of a string </p>
+
+</body>
+
+<script>
+
+const string1 = 'level';
+const string2 = 'Le, vel.';
+const string3="rock";
+
+const isPalindrome = (str) => {
+  let string = str
+      .replace(/[^\w]/gi, "") // replace all non-words characters
+      .toLowerCase(); // make all characters lower cased
+  return string == string.split('').reverse().join('');
+}
+
+// TEST
+console.log(isPalindrome(string1)); // true
+console.log(isPalindrome(string2)); // true
+console.log(isPalindrome(string3)); //false
+
+</script>
+
+</html>
