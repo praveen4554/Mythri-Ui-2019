@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+        <title>Calculator</title>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="calculator.css">
+</head>
+<body>
+   
+<div class="wrapper">
+    <form name="form" id="myform">
+    <h1 id="Heading">Calculator!</h1>
+   <input class="display" type="text" disabled placeholder="0" name="displayResult" >
+ <div class="Calc">
+   <aside class="operations">
+        <button class="op" name="addb" value="+" onClick="calcNumbers(addb.value); return false;">+</button>
+        <button class="op"name="subb" value="-" onClick="calcNumbers(subb.value); return false;">-</button>
+        <button class="op" name="mulb" value="*" onClick="calcNumbers(mulb.value); return false;">*</button>
+        <button class="op" name="divb" value="/" onClick="calcNumbers(divb.value); return false;">/</button>    
+    </aside>
+   
+   <div class="firstrow">
+       <button class="num"  name="b1" value="1" onClick="calcNumbers(b1.value); return false;">1</button>
+       <button class="num" name="b2" value="2" onClick="calcNumbers(b2.value); return false;">2</button>
+       <button class="num" name="b3" value="3" onClick="calcNumbers(b3.value); return false;">3</button>
+   </div>
+    <br>
+    <div class="secondrow">
+            <button class="num" name="b4" value="4" onClick="calcNumbers(b4.value); return false;">4</button>
+            <button class="num" name="b5" value="5" onClick="calcNumbers(b5.value); return false;">5</button>
+            <button class="num" name="b6" value="6" onClick="calcNumbers(b6.value); return false;">6</button>
+    </div>
+    <br>
+    <div class="thirdrow">
+            <button class="num" name="b7" value="7" onClick="calcNumbers(b7.value); return false;">7</button>
+            <button class="num" name="b8" value="8" onClick="calcNumbers(b8.value); return false;">8</button>
+            <button class="num" name="b9" value="9" onClick="calcNumbers(b9.value); return false;">9</button>
+    </div>
+    <br>
+    <div class="lastrow">
+            <button class="num" name="b0" value="0" onClick="calcNumbers(b0.value); return false;">0</button>
+            <button class="num" name="potb" value="." onClick="calcNumbers(potb.value); return false;">.</button>
+            <button class="cbtn" type="reset" name="clear" value="Reset" onclick= "calcNumbers.clear.value = ''">Clear</button>
+    </div>
+    <button class="eqlbtn" onclick="form.displayResult.value=eval(form.displayResult.value); return false;">=</button>
+    
+  </div>
+</form>
+</div>
+<script>
+ function calcNumbers(result){
+     form.displayResult.value=form.displayResult.value+result; 
+  }
+ /* function clear(){
+      document.getElementById("myform").innerHTML="";
+  }*/
+</script>
+</body>
+</html>

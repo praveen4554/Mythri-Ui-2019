@@ -1,0 +1,75 @@
+
+
+#Heading{
+    text-align: center;
+    font-weight: bold;
+}
+
+.Calc{
+    text-align: center;
+}
+
+.display{
+    height: 3em;
+    width: 17em;
+    background-color: antiquewhite;
+    border-color: black;
+    margin-left: 47em;
+    padding-right: 2em;
+    margin-top: 1em;
+    text-align-last: end;
+}
+
+.firstrow , .secondrow , .thirdrow , .lastrow{
+    text-align: center;
+    margin-right: 0em;
+}
+
+.firstrow{
+    margin-top: 1em;
+}
+
+.lastrow{
+    margin-left: 0em;
+}
+
+.cbtn{
+    background-color: red;
+    color: black;
+    font-size: 25px;
+    padding-right: 12px;
+    padding-left: 10px;
+    padding-top: 12px;
+    padding-bottom: 10px;
+    margin-left: 1px;
+}
+.operations{
+    margin-top: 1em;
+    margin-left: 0em;
+}
+.op{
+    font-size: 36px;
+    padding: 9px;
+    padding-right: 25px;
+    padding-left: 20px;
+    background-color: cadetblue;
+}
+
+.num{
+    background-color: chocolate;
+    font-size: 27px;
+    padding: 9px;
+    padding-right: 32px;
+    padding-left: 32px;
+}
+
+.eqlbtn{
+    padding-right: 6em;
+    padding-left: 6em;
+    margin-left: 0em;
+    margin-top: 1em;
+    padding-top: 1em;
+    padding-bottom: 1em;
+    background-color: chartreuse;
+    font-size: 20px;
+}
