@@ -1,0 +1,63 @@
+<DOCTYPE html>
+    <head>
+    <meta charset="UTF-8">
+    <title> Palindrome </title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <style>
+    
+    .hd{
+
+        text-align: center;
+        font-weight: bold;
+    }
+    
+    .box{
+        text-align: center;
+         margin-left: 45em;
+         padding-top: 1em;
+         padding-bottom: 1em;
+         padding-right: 2em;
+         padding-left: 2em;
+    }
+
+    .btn{
+       
+        text-align: center;
+        background-color: aquamarine;
+        color: black;
+        padding-top: 1em;
+        padding-bottom: 1em;
+        padding-right: 2em;
+        padding-left: 2em;
+        margin-left: 49em;
+        font-weight: bold;
+    }
+
+     
+    </style>
+    </head>
+    <body>
+     <script>
+         
+         function palin(){
+             var Str = document.getElementById("pal").value;
+             var revStr = Str.split("").reverse().join("");
+             var text = document.getElementById("pal");
+             text.value = revStr;
+             if( Str.toUpperCase() == revStr.toUpperCase()){
+                 alert(Str +   "IS A PALINDROME");
+             }
+             else{
+                 alert(Str +    "Not Palindrome!");
+               }
+            }                
+    </script>
+      <h1 class="hd">Check the string is Palindrome or not?</h1>
+     <input class="box" type="text" placeholder="Enter string here" id="pal">
+     <hr>
+     <button class="btn" type="submit" onclick="palin()">Submit</button>
+   
+    </body>
+</html>
+    
