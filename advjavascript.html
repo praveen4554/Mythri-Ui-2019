@@ -1,0 +1,291 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF=8">
+		<title>Javascript</title>
+	</head>
+	<body>
+		<h1>Javascript objects and functions</h1>
+		<script>
+
+//function constructor
+/*
+var john={
+	name:'John',
+	yearOfBirth:1990,
+	job:'teacher'
+};
+
+var Person=function(name,yearOfBirth,job){
+	this.name=name;
+	this.yearOfBirth=yearOfBirth;
+	this.job=job;
+}
+
+Person.prototype.calculateAge=function(){
+	console.log(2019-this.yearOfBirth);
+	}
+
+Person.prototype.lastName='Smith';
+
+var john=new Person('John',1990,'teacher');
+
+var jane=new Person('Jane',1969,'designer');
+
+var mark=new Person('Mark',1948,'retired');
+
+john.calculateAge();
+jane.calculateAge();
+mark.calculateAge();
+
+console.log(john.lastName);
+console.log(jane.lastName);
+console.log(mark.lastName);
+*/
+
+/*
+//object.create
+
+var personProto={
+	calculateAge:function() {
+		console.log(2019-this.yearOfBirth);
+	}
+};
+
+var john=object.create(personProto);
+
+john.name='John';
+john.yearOfBirth:1990;
+john.job='teacher';
+
+var jane=object.create(personProto,
+	{
+		name:{value:'jane'},
+		yearOfBirth:{value:1989},
+		job:{value:'designer'}
+	}
+);
+
+*/
+
+/*
+//primitive vs Objects
+
+//primitives
+
+var a=23;
+var b=a;
+var a=46;
+console.log(a);
+console.log(b);
+
+//objects
+
+var obj1={
+	name:'John',
+	age=26
+};
+var obj2=obj1;
+obj1.age=30;
+console.log(obj1.age);
+console.log(obj2.age);
+
+//functions
+
+var age=27;
+var obj={
+	name:'jonas',
+	city:'lisbon'
+};
+
+change(age,obj);
+
+function change(a,b){
+	a=30;
+	b.city='san francisco'
+}
+
+console.log(age);
+console.log(obj.city);
+*/
+
+/*
+//passing functions as arguements
+
+var years=[1990,1965,1937,2005,1998];
+
+function arrayCalculation(arr,fn){
+	var arrResult=[];
+	for(var i=0;i<arr.lenght,i++){
+		arrResult.push(fn(arr[i]));
+	}
+	return arrResult;
+}
+
+function calculateAge(el){
+	return 2019-el;
+}
+
+function isFullAge(el) {
+	return el>=18
+}
+
+function maxheartRate(el){
+	if(el>=18 && el<=81){
+		return Math.round(206.9-(0.67*el));	
+	}else{
+		return -1;
+	}
+}
+
+var ages=arrayCalculation(years,calculateAge);
+var fullAge=arrayCalculation(ages,isFullAge);
+var rates=arrayCalculation(ages,maxheartRate);
+console.log(ages);
+console.log(rates);
+*/
+
+/*
+//functions returning functions
+
+function interviewQuestion(job){
+	if(job=='designer'){
+		return function(name){
+			console.log(name+',+can you please explain what ux design is?');
+		}
+	}else if(job=='teacher'){
+		return function(name){
+			console.log('which subject do you teach,'+name+'?');
+		}
+	}else{
+		return function(name){
+			console.log('hello'+name+',what do you do?');
+		}
+	}
+}
+
+var teacherQuestion=interviewQuestion('teacher');
+var designerQuestion=interviewQuestion('designer');
+
+teacherQuestion('John');
+designerQuestion('Jane');
+interviewQuestion('teacher')('mark');
+*/
+
+/*
+//IIFE
+
+(function(){
+	var score=Math.random()*10;
+})();
+
+//console.log(score);
+
+(function(goodluck){
+	var score=Math.random()*10;
+	console.log(score>=5-goodluck);
+})(5);
+*/
+
+/*
+//closures
+
+function retirement(retirementAge){
+	var a="years left until retirement"
+	
+	return function(yearOfBirth){
+		var age=2019-yearOfBirth;
+		console.log((retirementAge-age)+a);
+	}
+}
+
+var retirementUS=retirement(66);//retirement(66)(1990);
+var retirementGermany=retirement(65);
+var retirementIceland=retirement(67);
+
+retirementGermany(1990);
+retirementUS(1990);
+retirementIceland(1990);
+*/
+
+/*
+//Another example of closures
+
+function interviewQuestion(job){
+	return function(name){
+		if(job=='designer'){
+			console.log(name+',+can you please explain what ux design is?');
+		}
+	    else if(job=='teacher'){
+			console.log('which subject do you teach,'+name+'?');
+		}
+	    else{
+			console.log('hello'+name+',what do you do?');
+		}
+	}
+}
+
+interviewQuestion('teacher')('john');
+*/
+
+/*
+//Bind, call and apply
+
+var john = {
+    name: 'John',
+    age: 26,
+    job: 'teacher',
+    presentation: function(style, timeOfDay) {
+        if (style === 'formal') {
+            console.log('Good ' + timeOfDay + ', Ladies and gentlemen! I\'m ' +  this.name + ', I\'m a ' + this.job + ' and I\'m ' + this.age + ' years old.');
+        } else if (style === 'friendly') {
+            console.log('Hey! What\'s up? I\'m ' +  this.name + ', I\'m a ' + this.job + ' and I\'m ' + this.age + ' years old. Have a nice ' + timeOfDay + '.');
+        }
+    }
+};
+
+var emily = {
+    name: 'Emily',
+    age: 35,
+    job: 'designer'
+};
+
+john.presentation('formal', 'morning');
+john.presentation.call(emily, 'friendly', 'afternoon');
+
+var johnFriendly = john.presentation.bind(john, 'friendly');
+johnFriendly('morning');
+johnFriendly('night');
+
+var emilyFormal = john.presentation.bind(emily, 'formal');
+emilyFormal('afternoon');
+
+// Another example
+
+var years = [1990, 1965, 1937, 2005, 1998];
+function arrayCalc(arr, fn) {
+    var arrRes = [];
+    for (var i = 0; i < arr.length; i++) {
+        arrRes.push(fn(arr[i]));
+    }
+    return arrRes;
+}
+
+function calculateAge(el) {
+    return 2016 - el;
+}
+
+function isFullAge(limit, el) {
+    return el >= limit;
+}
+
+var ages = arrayCalc(years, calculateAge);
+var fullJapan = arrayCalc(ages, isFullAge.bind(this, 20));
+
+console.log(ages);
+console.log(fullJapan);
+
+*/
+		</script>
+	</body>
+</html>
