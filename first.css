@@ -1,0 +1,39 @@
+/*p{
+    color: green !important;
+    background-color: green;
+}*/
+p{
+    color: green;
+}
+
+.praveen{
+    color: blue;
+}
+
+#praveen{
+    color: red;
+}
+
+#praveen{
+    color: #92927c;
+    font-size: 30px;
+    font-weight: 800;
+    font-variant: small-caps;
+    font-style: italic;
+    font-family: sans-serif;
+    cursor: zoom-out;
+    direction: ltr;
+    letter-spacing: 10px;
+    word-spacing: 10px;
+    text-align: center;
+    text-decoration: dotted;
+    text-shadow: 4px 4px 4px blue;
+    text-transform: lowercase;
+}
+
+/*body{
+    background-image: url('./test.png');
+    background-size : 13%;
+   background-repeat: no-repeat;
+   background-position: center;
+}*/
