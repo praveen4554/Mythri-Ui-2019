@@ -1,0 +1,28 @@
+<!--The content below is only a placeholder and can be replaced.-->
+<div style="text-align:center">
+  <h1>
+    Welcome to {{ title }}!
+  </h1>
+  
+  <div>Number of items in the Subjects:{{ subjects.length }}</div>
+
+  <input type="text" [(ngModel)] = "search">
+  <button (click) = "filterSubject()">Filter</button>
+
+  <ul >
+    <li *ngFor = "let subject of filterList"> {{subject}}</li>
+  </ul>
+
+  <input type="text" [(ngModel)] = "searchStudent" (keyup) = "filterStudent()">
+  <input type="checkbox" [(ngModel)] = "isMajor" (change) = "filterStudent()"/>
+  <label>Majors Only</label>
+<!--   <button (click) = "filterStudent()">Filter</button> -->
+
+  <ul>
+    <li *ngFor = "let student of filterObject">{{student.lName}} {{student.fName }} is of {{student.age}}</li>
+  </ul>
+
+</div>
+
+
+<router-outlet></router-outlet>
